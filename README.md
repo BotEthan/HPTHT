@@ -114,9 +114,14 @@ documentation.
 
 - https://edabit.com/challenge/4E9gTrRWErpTCA2FQ
 
+### Option 2: Road Navigation
 
+- https://edabit.com/challenge/qQu4kxTEHapogmCgE
 
-1. Say the Number!: https://edabit.com/challenge/4E9gTrRWErpTCA2FQ
-2. Road Navigation: https://edabit.com/challenge/qQu4kxTEHapogmCgE
-- Resistor Networks: https://edabit.com/challenge/eWXL8Jz78hP5tW644
-- International Standard Book Numbers: https://edabit.com/challenge/C5mooK3wfdhoooeLw
+### Option 3: Resistor Networks
+
+- https://edabit.com/challenge/eWXL8Jz78hP5tW644
+
+### Option 4: International Standard Book Numbers
+
+- https://edabit.com/challenge/C5mooK3wfdhoooeLw
