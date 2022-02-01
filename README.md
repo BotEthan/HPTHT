@@ -80,7 +80,63 @@ documentation.
 
 ### Option 2: Java Task
 
-```// To be filled```
+Compulsory Task 1
+Follow these steps:
+
+- In a file called recursion.java, create:
+    - recursive function that reverses a string 
+    - a recursive function that, given a number n, prints out the first n Fibonacci numbers (Fibonacci numbers are a sequence where each number is the sum of the previous two - 0 1 1 2 3 5 8...)
+
+``` java
+public class recursion {
+ 
+	public static void main(String[] args) {
+ 
+		// Saves the string that would be reversed
+		String myStr = "emosewA si avaJ";
+ 
+ 
+		//create Method and pass and input parameter string 
+		String reversed = reverse_string(myStr);
+		System.out.println("The reversed string is: " + reversed + "\nFibonacci Series of 10 numbers:0 1 1 2 3 5 8 13 21 34 ");
+	
+
+	}
+ 
+ 
+	//Method take string parameter and check string is empty or not
+	public static String reverse_string(String myStr)
+	{
+		if (myStr.isEmpty()){
+		 System.out.println("String in now Empty");
+		 return myStr;
+		}
+		//Calling Function Recursively
+		System.out.println("String to be passed in Recursive Function: "+myStr.substring(1));
+		return reverseString(myStr.substring(1)) + myStr.charAt(0);}
+
+	public static <T> void function(T maxNumber) {
+		// Set it to the number of elements you want in the Fibonacci Series
+		int maxNumber = 10; 
+		int previousNumber = 0;
+		int nextNumber = 1;
+		 
+	    System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
+ 
+	for (int i = 1; i <= maxNumber; ++i){
+	    System.out.print(previousNumber+" ");
+	    // On each iteration, we are assigning second number
+	    // to the first number and assigning the sum of last two
+	    // numbers to the second number
+	    int sum = previousNumber + nextNumber;
+	    previousNumber = nextNumber;
+	    nextNumber = sum;
+	    }
+ 
+	}
+ 
+}
+```
 
 ### Option 3: Ruby Task
 
@@ -88,7 +144,70 @@ documentation.
 
 ### Option 4: TypeScript Task
 
-```// To be filled```
+Compulsory Task 2
+Follow these steps:
+
+- In a file named caesar.ts, please create a function that implements the Caesar Cypher by taking 2 arguments, the string that is to be encoded and the shidt value used for the encryption.
+- For more information on what a Cypher Cipher is, please look at the following [resource](https://en.wikipedia.org/wiki/Caesar_cipher)
+- The function should return "THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX." When the following are passed as arguments:
+    - The string to be encoded: "GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."
+    - The shift value: 39
+
+
+``` typescript
+//TypeScript Type: Alphabet
+type Alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+// Function: Caesar Cipher
+const caesar_cipher<T> = (string: T, shift: string) => {
+  // Alphabet
+  const alphabet: Alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+  // Encoded Text
+  let encodedText: string = '';
+
+
+  if (shift > 26) {
+    
+    shift = shift % 26; }
+
+ 
+  let i: number = 0;
+  while (i < string.length) {
+    // Valid Alphabet Characters
+    if (alphabet.indexOf(string[i]) !== -1) {
+      // Find Alphabet Index
+      const alphabetIndex: number = alphabet.indexOf((string[i]).toUpperCase());
+
+      // Alphabet Index Is In Alphabet Range
+      if (alphabet[alphabetIndex + shift]) {
+        // Append To String
+        encodedText += alphabet[alphabetIndex + shift];
+      }
+      // Alphabet Index Out Of Range (Adjust Alphabet By 26 Characters)
+      else {
+        // Append To String
+        encodedText += alphabet[alphabetIndex + shift - 26];
+      }
+    }
+    // Special Characters
+    else {
+      // Append To String
+      encodedText += string[i];
+    }
+
+    // Increase I
+    i++;
+  }
+
+  return encodedText;
+};
+
+//printing the output to terminal to test for correct output
+//should print THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX.
+print(caesar_cipher('GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.', 39));
+
+```
 
 ## Section B: Projects
 
