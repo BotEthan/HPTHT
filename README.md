@@ -76,7 +76,35 @@ documentation.
 
 ### Option 1: Python Task
 
-```// To be filled```
+Compulsory Task 1
+Follow these steps:
+
+- In a file called anagram.py, create:
+
+- Given an array of strings strs, group the anagrams together. 
+- An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+    - You can return the answer in any order.
+    - Strings consists of lowercase English letters.
+      
+- Example input
+- Input: strs = ["eat","tea","tan","ate","nat","bat"]
+- Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+```Python
+class Solution:
+       def groupAnagrams(self, strs):
+      result = {}
+      for i in strs:
+         x = "".join(sorted())
+         if x in result:
+            result[x].append(i)
+         else:
+            result[x] = [i]
+      return list(result.values())
+ob1 = Solution()
+print(ob1.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+
+```
 
 ### Option 2: Java Task
 
@@ -86,6 +114,7 @@ Follow these steps:
 - In a file called recursion.java, create:
     - recursive function that reverses a string 
     - a recursive function that, given a number n, prints out the first n Fibonacci numbers (Fibonacci numbers are a sequence where each number is the sum of the previous two - 0 1 1 2 3 5 8...)
+    
 
 ``` java
 public class recursion {
@@ -140,7 +169,45 @@ public class recursion {
 
 ### Option 3: Ruby Task
 
-```// To be filled```
+Compulsory Task 2
+Follow these steps:
+
+- Write an algorithm to determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backwards and forwards.
+    - The number 121 is a palindrome. From left to right, it reads 121. From right to left, it reads 121.
+    - The number -121 is not a palindrome. From left to right, it reads -121. From right to left, it reads 121-.
+    -The number 10 is not a palindrome. From left to right, it reads 10. From right to left, it reads 01.
+
+```Ruby
+#set a variable reversed to 0 and number to a variable called num to pass into while loop
+def is_palindrome(x)
+    if x < 0
+    false
+#the number to reverse does not equal 0 (completely extracted)
+#continue extracting the ones value and adding it to the reversed number 
+#multiplied by 10 (to move it into the tens value)
+# if it’s not in the ones value, since the reversed originally is set to 0, 
+# it would place that extracted number in the ones value. thus reversing the integer.
+    else 
+        reversd = 0
+        num = x
+        while num != x
+            extracted = num%10
+#set variable num to num divided by 10, thus getting rid of the ones value since when you just use 
+#the division operator in ruby, it does not return the remainder.
+            reversed = reversed*10 + extracted
+            num=num/10
+        end
+#Once num value hits 0, the while loop extracted everything and the integer is reversed.
+#check the condition. If my reversed integer, does not equal my original integer, the original integer is NOT a palindrome.
+        if reversed != x
+            false
+        else
+            true
+        end
+    end
+
+```
+
 
 ### Option 4: TypeScript Task
 
