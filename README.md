@@ -214,7 +214,7 @@ def is_palindrome(x)
 Compulsory Task 2
 Follow these steps:
 
-- In a file named caesar.ts, please create a function that implements the Caesar Cypher by taking 2 arguments, the string that is to be encoded and the shidt value used for the encryption.
+- In a file named caesar.ts, please create a function that implements the Caesar Cypher by taking 2 arguments, the string that is to be encoded and the shift value used for the encryption.
 - For more information on what a Cypher Cipher is, please look at the following [resource](https://en.wikipedia.org/wiki/Caesar_cipher)
 - The function should return "THE QUICK BROWN DOG JUMPED OVER THE LAZY FOX." When the following are passed as arguments:
     - The string to be encoded: "GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK."
