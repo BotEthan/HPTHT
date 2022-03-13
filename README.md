@@ -1,8 +1,8 @@
-# HyperionDev Marketplace Reviewer Take-Home Test
+# HyperionDev Code Reviewer Take-Home Test
 
 ## Welcome
 
-We’re excited to get to know you and your skills better. The next step of the interview process with HyperionDev’s Marketplace Reviewer Network is to complete a
+We’re excited to get to know you and your skills better. The next step of the interview process with HyperionDev’s Code Reviewer Network is to complete a
 take-home exercise. Please complete this exercise within 2 days of receiving it and make sure your responses are all sent through to the talent@hyperiondev.com
 from which you received this assessment unless otherwise specified. 
 
