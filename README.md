@@ -311,3 +311,11 @@ print(caesar_cipher('GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.', 39));
 ### Option 4: International Standard Book Numbers
 
 - https://edabit.com/challenge/C5mooK3wfdhoooeLw
+
+## Section D: Loom Video Submission
+
+We would like to to get to know you a little bit better. We would like you to record a video for us using [Loom](https://loom.com). Please follow the link to sign up for free if you don't already have an account.
+We would like you to briefly answer all the questions listed below. Please make sure your video is no longer than 5 minutes and that you have enabled public access. Please include the the link to your recording in your repository's README.md file.
+- What is your experience as a developer?
+- What is your experience as an educator?
+- Working remotely, how do you deal with power and connectivity outages? Do you have a backup system?
